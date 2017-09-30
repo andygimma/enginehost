@@ -1,5 +1,6 @@
-PATH
-  remote: ../donatable
+GIT
+  remote: https://github.com/andygimma/donatable
+  revision: 4b2d2442d14048e73eab58ba229bd83265526de9
   specs:
     donatable (0.1.0)
       bootstrap (~> 4.0.0.beta)
