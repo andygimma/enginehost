@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 
 # gem 'donatable', path: '../donatable'
 gem 'donatable', git: 'https://github.com/andygimma/donatable'
-
+gem 'kaminari'
 gem 'devise'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
