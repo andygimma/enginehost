@@ -1,13 +1,14 @@
-GIT
-  remote: https://github.com/andygimma/donatable
-  revision: 6f294b7a147a8253dfaa5a65f5129de7afc2fc7c
+PATH
+  remote: ../donatable
   specs:
     donatable (0.1.0)
       acts-as-taggable-on (~> 4.0)
+      aws-sdk (~> 2)
       bootstrap (~> 4.0.0.beta)
       font-awesome-rails
       friendly_id (~> 5.1.0)
       jquery-rails
+      paperclip (~> 5.0.0)
       pg
       pg_search
       popper_js
@@ -61,6 +62,14 @@ GEM
     arel (8.0.0)
     autoprefixer-rails (7.1.4.1)
       execjs
+    aws-sdk (2.10.55)
+      aws-sdk-resources (= 2.10.55)
+    aws-sdk-core (2.10.55)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.10.55)
+      aws-sdk-core (= 2.10.55)
+    aws-sigv4 (1.0.2)
     bcrypt (3.1.11)
     bindex (0.5.0)
     bootstrap (4.0.0.beta)
@@ -78,6 +87,9 @@ GEM
       xpath (~> 2.0)
     childprocess (0.8.0)
       ffi (~> 1.0, >= 1.0.11)
+    climate_control (0.2.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -96,6 +108,8 @@ GEM
     erubi (1.6.1)
     execjs (2.7.0)
     ffi (1.9.18)
+    figaro (1.1.1)
+      thor (~> 0.14)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
     friendly_id (5.1.0)
@@ -106,6 +120,7 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
+    jmespath (1.3.1)
     jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -123,6 +138,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mimemagic (0.3.2)
     mini_mime (0.1.4)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
@@ -131,6 +147,12 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
+    paperclip (5.0.0)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (~> 0.3.0)
     pg (0.21.0)
     pg_search (2.1.1)
       activerecord (>= 4.2)
@@ -234,6 +256,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   donatable!
+  figaro
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg
