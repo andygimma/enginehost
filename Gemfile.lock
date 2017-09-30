@@ -1,8 +1,8 @@
-GIT
-  remote: https://github.com/andygimma/donatable
-  revision: 4b2d2442d14048e73eab58ba229bd83265526de9
+PATH
+  remote: ../donatable
   specs:
     donatable (0.1.0)
+      acts-as-taggable-on (~> 4.0)
       bootstrap (~> 4.0.0.beta)
       font-awesome-rails
       friendly_id (~> 5.1.0)
@@ -53,6 +53,8 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    acts-as-taggable-on (4.0.0)
+      activerecord (>= 4.0)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
