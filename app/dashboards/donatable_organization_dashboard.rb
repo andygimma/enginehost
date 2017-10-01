@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class Donatable::Engine::OrganizationDashboard < Administrate::BaseDashboard
+class DonatableOrganizationDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,10 +8,10 @@ class Donatable::Engine::OrganizationDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    taggings: Field::HasMany.with_options(class_name: "::ActsAsTaggableOn::Tagging"),
-    base_tags: Field::HasMany.with_options(class_name: "::ActsAsTaggableOn::Tag"),
-    tag_taggings: Field::HasMany.with_options(class_name: "ActsAsTaggableOn::Tagging"),
-    tags: Field::HasMany.with_options(class_name: "ActsAsTaggableOn::Tag"),
+    # taggings: Field::HasMany.with_options(class_name: "::ActsAsTaggableOn::Tagging"),
+    # base_tags: Field::HasMany.with_options(class_name: "::ActsAsTaggableOn::Tag"),
+    # tag_taggings: Field::HasMany.with_options(class_name: "ActsAsTaggableOn::Tagging"),
+    # tags: Field::HasMany.with_options(class_name: "ActsAsTaggableOn::Tag"),
     id: Field::Number,
     name: Field::String,
     email: Field::String,
@@ -44,19 +44,19 @@ class Donatable::Engine::OrganizationDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :taggings,
-    :base_tags,
-    :tag_taggings,
-    :tags,
+    # :taggings,
+    # :base_tags,
+    # :tag_taggings,
+    # :tags,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :taggings,
-    :base_tags,
-    :tag_taggings,
-    :tags,
+    # :taggings,
+    # :base_tags,
+    # :tag_taggings,
+    # :tags,
     :id,
     :name,
     :email,
@@ -87,10 +87,10 @@ class Donatable::Engine::OrganizationDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :taggings,
-    :base_tags,
-    :tag_taggings,
-    :tags,
+    # :taggings,
+    # :base_tags,
+    # :tag_taggings,
+    # :tags,
     :name,
     :email,
     :youtube_url,
