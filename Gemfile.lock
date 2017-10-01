@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/andygimma/donatable
-  revision: 08ccff758374529de1210cf12569d1f1befcf623
+  revision: 69e4494c796231c30312fece10af66eee93c7f30
   specs:
     donatable (0.1.0)
       acts-as-taggable-on (~> 4.0)
@@ -15,6 +15,7 @@ GIT
       popper_js
       rails (~> 5.1.4)
       tether-rails
+      will_paginate (~> 3.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -245,6 +246,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.1.6)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
