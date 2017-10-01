@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'donatable', git: 'https://github.com/andygimma/donatable'
 gem 'devise'
 gem 'figaro'
+gem 'administrate'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
