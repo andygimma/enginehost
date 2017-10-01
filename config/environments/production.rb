@@ -102,6 +102,7 @@ Rails.application.configure do
   # Setup the mailer config
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { :host => 'donatable.heroku.com' }
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
@@ -109,7 +110,8 @@ Rails.application.configure do
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
-    :enable_starttls_auto => true
+    :enable_starttls_auto => true,
+    :host => ''
   }
 
 end
