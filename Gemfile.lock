@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/andygimma/donatable
-  revision: 67167be8bd1e5dc94ddf9ead230d52993c0143d7
+  revision: 5adbfe22a46e37f5dab27d6d78d86ee937bee17b
   specs:
     donatable (0.1.0)
       acts-as-taggable-on (~> 4.0)
