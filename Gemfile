@@ -27,7 +27,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 # gem 'donatable', path: '../donatable'
-gem 'donatable', git: 'https://github.com/andygimma/donatable'
+gem 'donatable', git: 'https://github.com/andygimma/donatable', branch: 'design/edit-org-page-designs'
 gem 'devise'
 gem 'figaro'
 gem 'administrate'
