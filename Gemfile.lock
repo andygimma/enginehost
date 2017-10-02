@@ -1,5 +1,6 @@
-PATH
-  remote: ../donatable
+GIT
+  remote: https://github.com/andygimma/donatable
+  revision: b80a0ce3a5b269155e55ca6b782b264951f92e28
   specs:
     donatable (0.1.0)
       acts-as-taggable-on (~> 4.0)
